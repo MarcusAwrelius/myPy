@@ -5,17 +5,17 @@ import codecs
 
 import top as top
 
-HOST = 'ru114.activeby.net'
+HOST = 'ftp.someserver.net'
 ftp = FTP(HOST)
 
-user = 'user2064472'
-psw = 'I5cg9Cff'
+user = 'user'
+psw = 'pass'
 ftp.login(user, psw)
-ftp.cwd('www/markus-x5.com')
+ftp.cwd('www')
 
-dst = 'h:/Files/FTP_test/'
+dst = 'X:/Files/FTP_test/'
 src = '/www'
-site = 'markus-x5.com'
+site = 'sitename.dns'
 os.chdir(dst)
 try:
     os.mkdir(site)
